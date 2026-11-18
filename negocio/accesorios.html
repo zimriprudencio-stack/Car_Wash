@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autolavado</title>
+    <link rel="stylesheet" href="estilos.css">
+    
+</head>
+
+   
+<nav class="menu">
+    <a href="registro.html">Registro</a>
+    <a href="servicios.html">Servicios</a>
+    <a href="horarios.html">Horarios</a>
+    <a href="precios.html">Precios</a>
+    <a href="index.html">Inicio</a>
+</nav>
+
+<body>
+<mani>
+<section class="promocion" aria-labelledby="titulo-cotizador">
+<h2 id="titulo-cotizador">Cotiza tu compra</h2>
+<label for="producto">Producto</label>
+<select id="producto">
+<option value="">Selecciona un producto</option>
+<option value="38.00">pino colgante clasico $38.00</option>
+<option value="60.00">Toalla de microfibra 380 GSM, bolsa individual $60.00</option>
+<option value="90.00">Gel abrillantador para llanta $90.00</option>
+<option value="100.00">Protector/Almorol para tablero $100.00</option>
+<option value="230.00">Funda para volante universal $230.00</option>
+<option value="230.00">Desengrasante para motor $230.00</option>
+</select>
+<label for="cantidad">Cantidad</label>
+
+<input id="cantidad" type="number" min="1" max="20" step="1">
+<button id="boton-promocion" type="button">Ver promoción</button>
+<button id="calcular" type="button">Calcular</button>
+<button id="limpiar" type="button">Limpiar</button>
+<p id="mensaje-promocion" aria-live="polite"></p>
+<p id="resultado" aria-live="polite"></p>
+</section>
+<h1>Accesorios</h1>
+<div class="contenedor-productos">
+    <div class="producto">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStmVDlcf4aoUJ_wPQgouaY3i2mK_rJY08CuIqwdGJjGw&s=10"
+            alt="Descripción del primer producto">
+        <h3>Aromatizante little tress</h3>
+        <p>pino colgante clasico</p>
+        <p class="precio">$38.00</p>
+        <p>Precio: $38</p>
+<label for="cantidad-1">Cantidad:</label>
+<input type="number" id="cantidad-1" min="0" step="1" value="0">
+<p>Subtotal: $<span id="subtotal-1">0.00</span></p>
+    </div>
+    <div class="producto">
+        <img src="data:image/jpeg;base64,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"
+            alt="Descripción del segundo producto">
+        <h3>Microfibra</h3>
+        <p>Toalla de microfibra 380 GSM, bolsa individual</p>
+        <p class="precio">$60.00</p>
+        <p>Precio: $60</p>
+<label for="cantidad-2">Cantidad:</label>
+<input type="number" id="cantidad-2" min="0" step="1" value="0">
+<p>Subtotal: $<span id="subtotal-2">0.00</span></p>
+    </div>
+    <div class="producto">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZlHldsJhICX4hE4VDa1dc41i6u0XnDuLjxt38h9FaaA&s=10"
+            alt="Descripción del tercer producto">
+        <h3>Gel abrillantador para llanta</h3>
+        <p>Bote atomizador 500ml</p>
+        <p class="precio">$90.00</p>
+        <p>Precio: $90</p>
+<label for="cantidad-3">Cantidad:</label>
+<input type="number" id="cantidad-3" min="0" step="1" value="0">
+<p>Subtotal: $<span id="subtotal-3">0.00</span></p>
+    </div>
+    <div class="producto">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGJiBDIDi-DJLJW95TmulAT7hNK100haMb3Q7b94i5t3jqlbGlXh5KhTI&s=10"
+            alt="Descripción del tercer producto">
+        <h3>Protector/Almorol para tablero</h3>
+        <p>Botella 500ml tipo spray</p>
+        <p class="precio">$100.00</p>
+        <p>Precio: $100</p>
+<label for="cantidad-4">Cantidad:</label>
+<input type="number" id="cantidad-4" min="0" step="1" value="0">
+<p>Subtotal: $<span id="subtotal-4">0.00</span></p>
+    </div>
+    <div class="producto">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHf_5gEDAbG7dc7wLeaLneiI6NCS_vClwXLQbqRy624Q&s=10"
+            alt="Descripción del tercer producto">
+        <h3>Funda para volante universal</h3>
+        <p>Funda para volante universal</p>
+        <p class="precio">$230.00</p>
+        <p>Precio: $230</p>
+<label for="cantidad-5">Cantidad:</label>
+<input type="number" id="cantidad-5" min="0" step="1" value="0">
+<p>Subtotal: $<span id="subtotal-5">0.00</span></p>
+    </div>
+    <div class="producto">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYzpxc9pJ_rOB94cCKJv8BmECURXBQAQrrfKbKRwA4cA&s=10" alt="Nombre del producto">
+<h2>Desengrasante para motor</h2>
+<p>garrafa de 5 litros</p>
+<p class="precio">$250.00</p>
+<p>Precio: $250</p>
+<label for="cantidad-6">Cantidad:</label>
+<input type="number" id="cantidad-6" min="0" step="1" value="0">
+<p>Subtotal: $<span id="subtotal-6">0.00</span></p>
+    </div>
+</div>
+</section>
+<section class="resumen-compra">
+<h2>Resumen de mi compra</h2>
+<button type="button" id="calcular-compra">Calcular compra</button>
+<p>Importe: $<span id="importe-compra">0.00</span></p>
+<p>Descuento: $<span id="descuento-compra">0.00</span></p>
+<p>Total a pagar: $<span id="total-compra">0.00</span></p>
+</section>
+<footer>
+    <p>Car Wash_FF - 2026</p>
+</footer>
+</mani>
+<script src="script.js"></script>
+</body>
+
+</html>

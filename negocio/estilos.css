@@ -1,0 +1,628 @@
+.resumen-compra {
+max-width: 560px;
+margin: 24px auto;
+padding: 20px;
+border: 2px solid #155a91;
+border-radius: 10px;
+}
+.resumen-compra button { padding: 10px 16px; cursor: pointer; }
+input[type="number"] { max-width: 90px; padding: 7px; }
+
+.menu a {
+    width: 90%;
+    max-width: 300px;
+    text-align: center;
+}
+
+.presentacion {
+    flex-direction: column;
+    gap: 15px;
+    margin: 15px auto;
+    padding: 10px;
+}
+
+.texto-presentacion {
+    flex: none;
+    width: 100%;
+    text-align: center;
+}
+
+.imagen-negocio {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+}
+
+.contenedor-productos {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin: 15px auto;
+    padding: 10px;
+}
+
+.producto {
+    background-color: white;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    padding: 15px;
+}
+
+.producto {
+    width: 100%;
+    max-width: 350px;
+}
+
+body {
+    padding: 10px;
+}
+
+h1 {
+    font-size: 26px;
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: 22px;
+    line-height: 1.3;
+}
+
+p {
+    font-size: 16px;
+}
+
+/* AJUSTE GENERAL DE TAMAÑOS */
+* {
+    box-sizing: border-box;
+}
+
+.menu {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.menu a {
+    width: 90%;
+    max-width: 300px;
+    text-align: center;
+}
+
+.presentacion {
+    flex-direction: column;
+    gap: 15px;
+    margin: 15px auto;
+    padding: 10px;
+}
+
+.texto-presentacion {
+    flex: none;
+    width: 100%;
+    text-align: center;
+}
+
+.imagen-negocio {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+}
+
+.contenedor-productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.producto {
+    width: 100%;
+    max-width: 350px;
+}
+
+body {
+    padding: 10px;
+}
+
+h1 {
+    font-size: 26px;
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: 22px;
+    line-height: 1.3;
+}
+
+p {
+    font-size: 16px;
+}
+
+@media (max-width: 600px) {
+    /* Aquí agregaremos los ajustes para celular. */
+}
+
+/* DISTRIBUCIÓN DE PRODUCTOS */
+.contenedor-productos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1100px;
+    margin: 20px auto;
+    padding: 15px;
+}
+
+/* ORGANIZACIÓN DE PRODUCTOS CON CSS GRID */
+.contenedor-productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.producto {
+    background-color: white;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    padding: 15px;
+}
+
+.producto {
+    box-sizing: border-box;
+    width: 240px;
+    max-width: 100%;
+    padding: 15px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.producto img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+}
+
+.producto h3 {
+    margin-bottom: 8px;
+}
+
+.producto p {
+    margin-bottom: 8px;
+}
+
+.producto .precio {
+    font-weight: bold;
+    color: #800020;
+}
+
+.presentacion {
+    display: flex ruby-base-container;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    max-width: 900px;
+    margin: 25px auto;
+    padding: 15px;
+}
+
+.texto-presentacion {
+    flex: 1 1 280px;
+    min-width: 0;
+}
+
+.imagen-negocio {
+    width: 280px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* MENÚ CON FLEXBOX */
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.menu a {
+    color: #fff8f8;
+    text-decoration: none;
+    padding: 8px 12px;
+    background-color: #0087b1;
+    border-radius: 4px;
+}
+
+.menu a:hover {
+    background-color: #dddddd;
+}
+
+/* --- ESTILOS GENERALES Y RESET --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4f8;
+    /* Azul muy claro de fondo */
+    color: #102a43;
+    /* Azul oscuro para texto principal */
+    line-height: 1.6;
+}
+
+/* --- BARRA DE NAVEGACIÓN (NAV) --- */
+nav {
+    background: linear-gradient(135deg, #0b3c5d, #1d2731);
+    color: #ffffff;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav h2 {
+    font-size: 1.5rem;
+    color: #64ffda;
+    /* Toque azul/cian brillante para el logo */
+    letter-spacing: 1px;
+}
+
+nav a {
+    color: #cbd5e1;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #38bdf8;
+    /* Azul claro brillante al pasar el cursor */
+}
+
+/* --- CONTENIDO PRINCIPAL (MAIN) --- */
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    background: #ffffff;
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(11, 60, 93, 0.08);
+}
+
+/* --- TIPOGRAFÍA Y ENCABEZADOS --- */
+h1 {
+    font-size: 2.5rem;
+    color: #0b3c5d;
+    /* Azul marino profundo */
+    margin-bottom: 1.5rem;
+    text-align: center;
+    border-bottom: 3px solid #38bdf8;
+    padding-bottom: 0.5rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: #1d4ed8;
+    /* Azul rey moderno */
+    margin: 1.5rem 0 0.8rem 0;
+}
+
+p {
+    font-size: 1.05rem;
+    color: #334155;
+    margin-bottom: 1.2rem;
+}
+
+/* --- ESTILOS PARA IMÁGENES --- */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 1rem 0;
+    display: block;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* --- DISEÑO RESPONSIVO BÁSICO --- */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav div,
+    nav a {
+        margin-top: 0.5rem;
+    }
+
+    main {
+        padding: 1.5rem;
+        margin: 1rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+}
+
+/* --- ESTILOS ADICIONALES PARA HORARIOS Y PRECIOS --- */
+
+/* Formato contenedor para precios u horarios */
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* Transformar las secciones en tarjetas de tonos azules */
+main h2 {
+    background-color: #e0f2fe;
+    /* Azul claro suave de fondo */
+    color: #0369a1;
+    /* Azul intermedio fuerte */
+    padding: 0.8rem 1.2rem;
+    border-left: 5px solid #0284c7;
+    /* Línea de acento azul */
+    border-radius: 6px;
+    margin-top: 1rem;
+}
+
+/* Estilo para los textos dentro de las secciones */
+main p {
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    padding: 1rem 1.2rem;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    color: #1e293b;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+}
+
+/* Destacar los precios/costos */
+main p strong,
+main p:has(br) {
+    font-weight: 600;
+}
+
+/* =========================================================
+   ESTILOS GENERALES
+   ========================================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #eef2f5;
+    /* Fondo claro similar al de la pantalla */
+    color: #333333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* =========================================================
+   BARRA DE NAVEGACIÓN (NAV)
+   ========================================================= */
+nav {
+    background-color: #0d2a45;
+    /* Azul muy oscuro del nav en las imágenes */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 25px;
+    font-size: 15px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #38b6ff;
+    /* Azul celeste al pasar el ratón */
+}
+
+/* =========================================================
+   CONTENEDOR PRINCIPAL Y SECCIONES
+   ========================================================= */
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.galeria {
+    width: 100%;
+    max-width: 750px;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Títulos con el tono azul distintivo del sitio */
+h1 {
+    text-align: center;
+    color: #0f5286;
+    font-size: 28px;
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #bce0fd;
+    /* Línea delgada azul claro bajo el título */
+}
+
+/* =========================================================
+   ESTILOS DEL FORMULARIO (registro.html)
+   ========================================================= */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+label {
+    font-weight: bold;
+    color: #0f5286;
+    margin-top: 8px;
+    font-size: 14px;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #bce0fd;
+    border-radius: 4px;
+    background-color: #f9fbfd;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="number"]:focus,
+select:focus {
+    border-color: #0f5286;
+    background-color: #ffffff;
+}
+
+/* Botones */
+button {
+    padding: 12px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"] {
+    background-color: #0f5286;
+    color: #ffffff;
+}
+
+button[type="submit"]:hover {
+    background-color: #0d2a45;
+}
+
+button[type="reset"] {
+    background-color: #d9e6f2;
+    color: #0f5286;
+}
+
+button[type="reset"]:hover {
+    background-color: #c4d9ec;
+}
+
+/* =========================================================
+   ESTILOS DE LA TABLA (accesorios.html)
+   ========================================================= */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background-color: #ffffff;
+}
+
+th {
+    background-color: #0f5286;
+    color: #ffffff;
+    text-align: left;
+    padding: 12px;
+    font-size: 15px;
+}
+
+td {
+    padding: 12px;
+    border-bottom: 1px solid #e1e8ed;
+    font-size: 14px;
+}
+
+tr:nth-child(even) {
+    background-color: #f4f8fb;
+    /* Sombra suave alternada en filas */
+}
+
+tr:hover {
+    background-color: #eaf2f8;
+}
+
+/* =========================================================
+   PIE DE PÁGINA (FOOTER)
+   ========================================================= */
+footer {
+    text-align: center;
+    padding: 15px;
+    color: #777777;
+    font-size: 13px;
+    margin-top: auto;
+}
+
+@media (max-width: 1200px) {
+    .contenedor-productos{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        padding: 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+
+    }
+
+}
+   .menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+
+}
+/* ADAPTACIÓN PARA TABLETAS */
+@media (max-width: 900px) {
+    .contenedor-productos{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .menu{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .contenedor-productos {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        margin: 15px auto;
+        padding: 10px;
+    }
+
+    .producto {
+        width: 100%;
+        max-width: 350px;
+        justify-self: center;
+    }
+}
